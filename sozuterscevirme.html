@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tfiv</title>
+    <script>
+      function reverseWord() {
+        var inputWord = document.getElementById("inputWord").value;
+        var outputString = "";
+        for (var i = inputWord.length - 1; i >= 0; i--) {
+          outputString += inputWord[i];
+        }
+        document.getElementById("output").innerHTML = outputString;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>sozu tersine cevir</h1>
+    
+    <label for="inputWord">Soz:</label>
+    <input type="text" id="inputWord" />
+    <button onclick="reverseWord()">Tersine cevir</button>
+    <p id="output"></p>
+  </body>
+</html>
